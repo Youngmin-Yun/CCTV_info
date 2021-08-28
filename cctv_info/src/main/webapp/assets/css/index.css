@@ -1,0 +1,29 @@
+.right_area{
+    width: 830px;  box-sizing: border-box; padding-left: 20px;
+}
+.data_row{
+    width: 100%; background-color: #fff; font-size: 0; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.data_row h1 {
+    font-family: "Noto Sans KR", sans-serif; font-weight: 700;
+    font-size: 24px; text-align: center; padding-top: 20px; margin-bottom: 20px;
+}
+.data_row > div { display: inline-block; width: 50%;
+    font-size: 20px; text-align: center; vertical-align: top;
+    font-family: "Noto Sans KR", sans-serif; font-weight: 700; margin-bottom: 20px;
+}
+.container > .right_area {font-size: 0;}
+.cctv_cate{
+    margin-right: 20px;
+   width: 100%; display: inline-block; vertical-align: top;
+   margin-bottom: 20px; font-size: 16px; text-align: center; border-radius: 5px; 
+   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+   padding-bottom: 20px;
+}
+.cctv_box {width: calc((100% - 40px) / 3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); display: inline-block; margin-right: 20px;
+margin-bottom: 20px;}
+.cctv_box:nth-child(3n) {margin-right: 0;}
+.cctv_box p {font-family:  "Noto Sans KR", sans-serif;}
+.cctv_por {font-size: 18px; margin-top: 20px; font-weight: 700; margin-bottom: 20px;}
+.cctv_por_cnt {font-size: 18px; margin-top: 20px; font-weight: 700; margin-bottom: 20px;}

@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd.mybatis-3-mapper.dtd">
+<mapper namespace = "com.cctv.mapper.CctvInfoMapper">
+    <insert id ="insertCctvInfo">
+        INSERT INTO cctv_info (institutionNm, lnmadr, installationPurpsType, potogrfInfo, installationYymm, phoneNumber, latitude, longitude, cstdyDay)
+        VALUES(#{institutionNm}, #{lnmadr}, #{installationPurpsType}, #{potogrfInfo}, #{installationYymm}, #{phoneNumber}, #{latitude}, #{longitude}, #{cstdyDay});
+    </insert>
+    <select id = "selectAllCctvCnt" resultType = "java.lang.Integer">
+        select count(*) from cctv_info
+    </select>
+    <select id = "selectCateByPorpose" resultType = "com.cctv.vo.CctvInfoVO">
+        select SUBSTRING_INDEX(installationPurpsType, '(',1) as purpos, count(*) as cnt from cctv_info group by purpos 
+        order by cnt desc
+    </select>
+</mapper>
